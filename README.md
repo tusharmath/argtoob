@@ -13,9 +13,10 @@ npm i argtoob --save
 
 ## Usage
 ```javascript
-const t = require('argtoob')
+const targs = require('argtoob')
 
-const toObj = t('a', 'b', 'c') // returns a function
+const toObj = targs('a', 'b', 'c') // returns a function
+
 toObj(1, 2, 3) // returns {a: 1, b: 2, c: 3}
 
 ```
@@ -25,6 +26,9 @@ toObj(1, 2, 3) // returns {a: 1, b: 2, c: 3}
 #### 1. Create a key value pair from an object
 
 ```javascript
+const _ = require('lodash')
+const targs = require('argtoob')
+
 _.map({a: 1, b: 2, c: 3}, targs('value', 'key'))
 
 /* OUTPUTS
@@ -39,6 +43,8 @@ _.map({a: 1, b: 2, c: 3}, targs('value', 'key'))
 #### 2. Merge Streams with RxJS
 
 ```javascript
+const Rx = require('rx')
+const targs = require('argtoob')
 const resize = Rx.Observable.fromEvent(window, 'resize')
 const scroll = Rx.Observable.fromEvent(window, 'scroll')
 
