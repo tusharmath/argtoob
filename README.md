@@ -1,6 +1,9 @@
 # argtoob
 
-Function to convert a list of arguments to an object. This module is created as an alternative to the request [lodash#2004][0]  and of course with @jdalton's permission :-)
+[![Build Status][travis-svg]][travis-build]
+[![npm][npm-version-svg]][npm]
+
+Function to convert a list of arguments to an object. This module is created as an alternative to the request [lodash#2004][0] and of course with @jdalton's permission :-)
 
 ## Install
 
@@ -43,3 +46,7 @@ Rx.Observable.combineLatest(resize, scroll, targs('resize', 'scroll'))
 ```
 
 [0]: https://github.com/lodash/lodash/issues/2004#issuecomment-185087141
+[travis-svg]: https://travis-ci.org/tusharmath/argtoob.svg?branch=master
+[travis-build]: https://travis-ci.org/tusharmath/argtoob
+[npm-version-svg]: https://img.shields.io/npm/v/argtoob.svg
+[npm]: https://www.npmjs.com/package/argtoob
